@@ -41,12 +41,12 @@ const ServicePageLayout = ({
               {subtitle}
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:+919999999999">
+              <a href="tel:+919121878363">
                 <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-8">
                   <Phone className="w-5 h-5" /> Call Now
                 </Button>
               </a>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <MessageCircle className="w-5 h-5" /> WhatsApp
                 </Button>
@@ -174,12 +174,12 @@ const ServicePageLayout = ({
             Don't wait. Get personalized astrological guidance today and find your path to happiness.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+919999999999">
+            <a href="tel:+919121878363">
               <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-10 glow-gold">
                 <Phone className="w-5 h-5" /> Call Now — Free Consultation
               </Button>
             </a>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-10 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <MessageCircle className="w-5 h-5" /> WhatsApp Us
               </Button>
