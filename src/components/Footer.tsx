@@ -1,16 +1,34 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+
+const PHONE = "+919121878363";
+const WA_LINK = "https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation";
 
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-16">
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="container grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <h3 className="text-2xl text-gradient-gold font-bold mb-4">ॐ Jyotish Guru</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Guiding souls through the cosmic wisdom of Vedic astrology for over 40 years.
             Trusted by 20,000+ clients worldwide.
           </p>
+        </div>
+        <div>
+          <h4 className="text-primary font-display text-lg mb-4">Quick Links</h4>
+          <div className="flex flex-col gap-2">
+            {[
+              { label: "Home", to: "/" },
+              { label: "About", to: "/about" },
+              { label: "Testimonials", to: "/testimonials" },
+              { label: "Contact", to: "/contact" },
+            ].map((s) => (
+              <Link key={s.to} to={s.to} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                {s.label}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h4 className="text-primary font-display text-lg mb-4">Our Services</h4>
@@ -32,14 +50,17 @@ const Footer = () => {
         <div>
           <h4 className="text-primary font-display text-lg mb-4">Contact</h4>
           <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-            <a href="tel:+919121878363" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href={`tel:${PHONE}`} className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary" /> +91 91218 78363
+            </a>
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <MessageCircle className="w-4 h-4 text-[hsl(142,70%,45%)]" /> WhatsApp Us
             </a>
             <a href="mailto:info@jyotishguru.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-4 h-4 text-primary" /> info@jyotishguru.com
             </a>
             <span className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-primary" /> India
+              <MapPin className="w-4 h-4 text-primary" /> Hyderabad, India
             </span>
           </div>
         </div>
