@@ -7,6 +7,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
 import LoveProblemSolution from "./pages/LoveProblemSolution";
 import MarriageAstrology from "./pages/MarriageAstrology";
 import CareerProblem from "./pages/CareerProblem";
@@ -28,6 +31,9 @@ const App = () => (
         <main className="pt-16">
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/love-problem-solution" element={<LoveProblemSolution />} />
             <Route path="/marriage-astrology" element={<MarriageAstrology />} />
             <Route path="/career-problem" element={<CareerProblem />} />
