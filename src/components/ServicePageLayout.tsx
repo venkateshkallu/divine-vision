@@ -22,7 +22,7 @@ const ServicePageLayout = ({
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center overflow-hidden">
         <img
           src={serviceBg}
           alt=""
@@ -31,23 +31,23 @@ const ServicePageLayout = ({
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
-        <div className="container relative z-10 py-32">
+        <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-background via-background/90 to-transparent" />
+        <div className="container relative z-10 py-20 sm:py-32">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-4 sm:mb-6">
               {title}
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 font-body leading-relaxed mb-8">
+            <p className="text-sm sm:text-lg md:text-xl text-foreground/80 font-body leading-relaxed mb-6 sm:mb-8">
               {subtitle}
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+919121878363">
-                <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <a href="tel:+919121878363" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto bg-gradient-divine font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8">
                   <Phone className="w-5 h-5" /> Call Now
                 </Button>
               </a>
-              <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <MessageCircle className="w-5 h-5" /> WhatsApp
                 </Button>
               </a>
@@ -57,9 +57,9 @@ const ServicePageLayout = ({
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-gradient-cosmic">
+      <section className="py-12 sm:py-20 bg-gradient-cosmic">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold text-center mb-4">
             Are You Facing These Problems?
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -77,9 +77,9 @@ const ServicePageLayout = ({
       </section>
 
       {/* Solution Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-20">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold text-center mb-4">
             How Astrology Can Help You
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -120,9 +120,9 @@ const ServicePageLayout = ({
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-gradient-cosmic">
+      <section className="py-12 sm:py-20 bg-gradient-cosmic">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold text-center mb-8 sm:mb-12">
             Benefits You'll Receive
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -137,9 +137,9 @@ const ServicePageLayout = ({
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-12 sm:py-20">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold text-center mb-8 sm:mb-12">
             What Our Clients Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -162,25 +162,25 @@ const ServicePageLayout = ({
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-cosmic relative overflow-hidden">
+      <section className="py-14 sm:py-20 bg-gradient-cosmic relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img src={serviceBg} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
         </div>
         <div className="container relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold mb-4">
             Ready to Transform Your Life?
           </h2>
-          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+          <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 max-w-xl mx-auto">
             Don't wait. Get personalized astrological guidance today and find your path to happiness.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+919121878363">
-              <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-10 glow-gold">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 px-4 sm:px-0">
+            <a href="tel:+919121878363" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-gradient-divine font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-10 glow-gold">
                 <Phone className="w-5 h-5" /> Call Now — Free Consultation
               </Button>
             </a>
-            <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-10 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-10 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <MessageCircle className="w-5 h-5" /> WhatsApp Us
               </Button>
             </a>
