@@ -41,23 +41,23 @@ const Contact = () => {
             {/* Info */}
             <div>
               <h2 className="text-2xl font-display text-gradient-gold mb-8">Reach Us Directly</h2>
-              <div className="flex flex-col gap-6">
-                <a href={`tel:${PHONE}`} className="flex items-center gap-4 bg-card rounded-lg p-5 border-glow-gold hover:scale-[1.02] transition-transform">
+              <div className="flex flex-col gap-4 sm:gap-6">
+                <a href={`tel:${PHONE}`} className="flex items-center gap-4 bg-card rounded-lg p-4 sm:p-5 border-glow-gold hover:scale-[1.02] transition-transform">
                   <div className="w-12 h-12 rounded-full bg-gradient-divine flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     <p className="text-foreground font-semibold">Phone</p>
-                    <p className="text-muted-foreground text-sm">+91 91218 78363</p>
+                    <p className="text-primary font-medium">+91 91218 78363</p>
                   </div>
                 </a>
-                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-card rounded-lg p-5 border-glow-gold hover:scale-[1.02] transition-transform">
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-card rounded-lg p-4 sm:p-5 border-glow-gold hover:scale-[1.02] transition-transform">
                   <div className="w-12 h-12 rounded-full bg-[hsl(142,70%,45%)] flex items-center justify-center flex-shrink-0">
                     <MessageCircle className="w-6 h-6 text-background" />
                   </div>
                   <div>
                     <p className="text-foreground font-semibold">WhatsApp</p>
-                    <p className="text-muted-foreground text-sm">Chat instantly — available 24/7</p>
+                    <p className="text-[hsl(142,70%,45%)] font-medium">+91 91218 78363</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 bg-card rounded-lg p-5 border-glow-gold">

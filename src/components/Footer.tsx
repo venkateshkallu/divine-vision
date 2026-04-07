@@ -50,8 +50,8 @@ const Footer = () => {
         <div>
           <h4 className="text-primary font-display text-lg mb-4">Contact</h4>
           <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-            <a href={`tel:${PHONE}`} className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="w-4 h-4 text-primary" /> +91 91218 78363
+            <a href={`tel:${PHONE}`} className="flex items-center gap-2 hover:text-primary transition-colors text-primary font-medium">
+              <Phone className="w-4 h-4" /> +91 91218 78363
             </a>
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
               <MessageCircle className="w-4 h-4 text-[hsl(142,70%,45%)]" /> WhatsApp Us

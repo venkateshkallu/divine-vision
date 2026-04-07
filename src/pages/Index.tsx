@@ -31,21 +31,21 @@ const Index = () => {
             <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
               ✦ Vedic Astrology • Numerology • Vastu ✦
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-4 sm:mb-6">
               Divine Guidance for Your Life's Journey
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 font-body leading-relaxed mb-10 max-w-lg">
+            <p className="text-base md:text-lg text-foreground/70 font-body leading-relaxed mb-6 sm:mb-10 max-w-lg">
               40+ years of Vedic wisdom. 20,000+ lives transformed. 
               Let the stars reveal your true path to happiness, love, and prosperity.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a href="tel:+919121878363">
-                <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-8 glow-gold">
+                <Button size="lg" className="w-full sm:w-auto bg-gradient-divine font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8 glow-gold">
                   <Phone className="w-5 h-5" /> Free Consultation
                 </Button>
               </a>
               <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <MessageCircle className="w-5 h-5" /> WhatsApp
                 </Button>
               </a>
