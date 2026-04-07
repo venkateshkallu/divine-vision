@@ -12,10 +12,10 @@ const About = () => {
       <section className="py-16 sm:py-24 md:py-32 bg-gradient-cosmic">
         <div className="container max-w-4xl text-center">
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">✦ About Our Guruji ✦</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-6">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-4 sm:mb-6">
             40+ Years of Vedic Wisdom
           </h1>
-          <p className="text-lg text-foreground/70 font-body leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm sm:text-lg text-foreground/70 font-body leading-relaxed max-w-2xl mx-auto">
             A lifetime dedicated to the sacred science of Jyotish Shastra, guiding thousands 
             towards clarity, peace, and divine purpose.
           </p>
