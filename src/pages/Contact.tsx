@@ -22,10 +22,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-gradient-cosmic">
+      <section className="py-16 sm:py-24 md:py-32 bg-gradient-cosmic">
         <div className="container max-w-4xl text-center">
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">✦ Get In Touch ✦</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-6">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-4 sm:mb-6">
             Contact Us
           </h1>
           <p className="text-lg text-foreground/70 font-body leading-relaxed max-w-2xl mx-auto">
@@ -35,9 +35,9 @@ const Contact = () => {
       </section>
 
       {/* Contact Info + Form */}
-      <section className="py-20">
+      <section className="py-12 sm:py-20">
         <div className="container max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Info */}
             <div>
               <h2 className="text-2xl font-display text-gradient-gold mb-8">Reach Us Directly</h2>
@@ -98,7 +98,7 @@ const Contact = () => {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-display text-gradient-gold mb-8">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="bg-card rounded-xl p-8 border-glow-gold flex flex-col gap-5">
+              <form onSubmit={handleSubmit} className="bg-card rounded-xl p-5 sm:p-8 border-glow-gold flex flex-col gap-4 sm:gap-5">
                 <div>
                   <label className="text-sm text-foreground/70 mb-1 block font-body">Full Name</label>
                   <Input

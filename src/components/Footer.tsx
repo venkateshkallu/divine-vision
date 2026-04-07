@@ -6,11 +6,11 @@ const WA_LINK = "https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20con
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-16">
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-card border-t border-border py-10 sm:py-16">
+      <div className="container grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12">
         <div>
-          <h3 className="text-2xl text-gradient-gold font-bold mb-4">ॐ Jyotish Guru</h3>
-          <p className="text-muted-foreground text-sm leading-relaxed">
+          <h3 className="text-xl sm:text-2xl text-gradient-gold font-bold mb-3 sm:mb-4">ॐ Jyotish Guru</h3>
+          <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
             Guiding souls through the cosmic wisdom of Vedic astrology for over 40 years.
             Trusted by 20,000+ clients worldwide.
           </p>

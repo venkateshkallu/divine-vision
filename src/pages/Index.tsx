@@ -17,34 +17,34 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] sm:min-h-screen flex items-end sm:items-center overflow-hidden">
         <img
           src={heroBg}
           alt="Cosmic spiritual background with Trimurti divine energy"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-right sm:object-center"
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
-        <div className="container relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-background via-background/90 sm:via-background/80 to-background/40 sm:to-transparent" />
+        <div className="container relative z-10 pb-10 sm:pb-0">
           <div className="max-w-2xl">
-            <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4 animate-pulse-glow">
+            <p className="text-primary font-body text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4 animate-pulse-glow">
               ✦ Vedic Astrology • Numerology • Vastu ✦
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-4 sm:mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold text-gradient-gold leading-tight glow-text-gold mb-3 sm:mb-6">
               Divine Guidance for Your Life's Journey
             </h1>
-            <p className="text-base md:text-lg text-foreground/70 font-body leading-relaxed mb-6 sm:mb-10 max-w-lg">
+            <p className="text-sm sm:text-base md:text-lg text-foreground/70 font-body leading-relaxed mb-5 sm:mb-10 max-w-lg">
               40+ years of Vedic wisdom. 20,000+ lives transformed. 
               Let the stars reveal your true path to happiness, love, and prosperity.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a href="tel:+919121878363">
+              <a href="tel:+919121878363" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full sm:w-auto bg-gradient-divine font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8 glow-gold">
                   <Phone className="w-5 h-5" /> Free Consultation
                 </Button>
               </a>
-              <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   <MessageCircle className="w-5 h-5" /> WhatsApp
                 </Button>
@@ -55,8 +55,8 @@ const Index = () => {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-12 bg-card border-y border-border">
-        <div className="container grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <section className="py-8 sm:py-12 bg-card border-y border-border">
+        <div className="container grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
           {[
             { icon: Clock, label: "Years Experience", value: "40+" },
             { icon: Users, label: "Happy Clients", value: "20,000+" },
@@ -73,12 +73,12 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section className="py-24 bg-gradient-cosmic">
+      <section className="py-14 sm:py-24 bg-gradient-cosmic">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold text-center mb-3 sm:mb-4">
             Our Divine Services
           </h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground text-sm sm:text-base mb-8 sm:mb-16 max-w-2xl mx-auto">
             Comprehensive astrological solutions for every aspect of your life
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -98,9 +98,9 @@ const Index = () => {
       </section>
 
       {/* About */}
-      <section className="py-24">
+      <section className="py-14 sm:py-24">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold mb-4 sm:mb-6">
             Why Choose Jyotish Guru?
           </h2>
           <p className="text-foreground/70 leading-relaxed mb-8">
@@ -124,22 +124,22 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-cosmic relative overflow-hidden">
+      <section className="py-14 sm:py-20 bg-gradient-cosmic relative overflow-hidden">
         <div className="container relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-display text-gradient-gold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display text-gradient-gold mb-4">
             Start Your Spiritual Journey Today
           </h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Your first consultation is free. Discover what the cosmos has planned for you.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+919121878363">
-              <Button size="lg" className="bg-gradient-divine font-body font-semibold gap-2 text-lg px-10 glow-gold">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 px-4 sm:px-0">
+            <a href="tel:+919121878363" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-gradient-divine font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-10 glow-gold">
                 <Phone className="w-5 h-5" /> Call Now
               </Button>
             </a>
-            <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="font-body font-semibold gap-2 text-lg px-10 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <a href="https://wa.me/919121878363?text=Hi%20I%20need%20astrology%20consultation" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto font-body font-semibold gap-2 text-base sm:text-lg px-6 sm:px-10 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <MessageCircle className="w-5 h-5" /> WhatsApp
               </Button>
             </a>
